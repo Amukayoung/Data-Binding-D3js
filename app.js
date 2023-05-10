@@ -18,3 +18,20 @@ const populationData = {
 		this.cities[cityIndex] = newCity;
 	},
 };
+d3.select("ul")
+	.selectAll("li")
+	.data(populationData.cities)
+	.enter()
+	.append("li")
+	.text((data) => data);
+
+setTimeout(() => {
+	populationData.addCity("Arua");
+	d3.select("ul")
+		.selectAll("li")
+		.data(populationData.cities)
+		.enter()
+		.append("li")
+		.classed("added", true)
+		.text((data) => data);
+}, 2000);
