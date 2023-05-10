@@ -53,5 +53,5 @@ setTimeout(() => {
 		.data(populationData.cities, (data) => data)
 		.exit()
 		.classed("updated", true)
-		.text((data) => data);
+		.text("Jinja");
 }, 6000);
