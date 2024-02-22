@@ -1,2 +1,3 @@
 # Data-Binding-D3js
-D3JS is used for visualizing data
+
+In this Setup,I used D3JS is used for visualizing data
